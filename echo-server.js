@@ -20,6 +20,12 @@ let server = net.createServer(function(connection) {
     // Use console.log to record when a client sends us data.
     // Use connection.write(...) to send data to the client
 
+    //console.log prints on computer program
+    console.log(clientData);
+    console.log("bippidy bop");
+
+    //connection.write reports back to client
+    connection.write(clientData.toString().toUpperCase());
     // Remember, an echo server sends back exactly what was received.
   });
 
